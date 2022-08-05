@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robert Cowden Jewelery</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script><!--Bootstrap-->
+<link rel="stylesheet" href="stylesheet.css"><!--CSS stylesheet-->
+<script src="script.js"></script> <!--Script for javascript-->
+
+<!--3d Viewer-->
+<script src="three.min.js"></script>
+<script src="STLLoader.js"></script>
+<script src="OrbitControls.js"></script>
+<script src="stl_viewer.min.js"></script>
+
+</head>
+
+
+<body class="bg-dark">
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">Robert Cowden</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#rings" class="nav-item nav-link">Rings</a>
+                <a href="#pendants" class="nav-item nav-link">Pendants</a>
+                <a href="#cgi" class="nav-item nav-link">3D Modeling</a>
+              	<a href="#home" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <!--Welcome Card-->
+  <div class="card text-center bg-dark">
+    <img src="https://i.ibb.co/DRJrcsD/IMG-5677.jpg" alt="IMG-5677" class="img-fluid">
+    <div class="card-body">
+      <h5 class="card-title text-light" id="home">Robert Cowden Jewelery</h5>
+      <p class="card-text text-light">I am a custom jewelry artist working out of Portland, Oregon.
+      </p>
+      <p class="card-text text-light">I work with platinum, gold, and silver and with any gemstone you'd like.</p>
+        <p class="card-text text-light">Message me about starting your custom jewelry project today!</p>
+      <a href="mailto:robertcowden@mac.com" class="btn btn-light">Send Email</a>
+    </div>
+  </div>
+
+<!--Image Carousel-->
+<div class="container-fluid">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1502613345505-9e46442c057b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.ibb.co/RY1Ch01/946-F171-A-6-AD6-4-E25-8-A24-5-B5-E070-BC973.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.ibb.co/kXZVrz4/D47-DB398-6986-4-EAD-A1-C0-0-CE8-AB84-C565.jpg" alt="Third slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </a>
+      </div>
+    <div class="row">
+    </div>
+    <br><br>
+
+    <!--Ring Image Tabs-->
+<div class="card text-center bg-dark" id="rings">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="#">Rings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#pendants">Pendants</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--First Two Images-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/bNB5cSX/2-EE2-FE20-446-C-4-AB7-93-CC-0-F5-FAF7001-A0.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Colored Bezel Rings</h5>
+          <p class="card-text">Tri-gem rings of different colors set in .925 Sterling Silver.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/Gtqv3mp/5-B6993-DB-8-DDA-4-B00-A117-1-A13-BE78-C8-DB.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wavy Ring</h5>
+          <p class="card-text">Computer designed, 3D printed and cast. Sterling silver ring with topaz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+
+<!--Second Two Images-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/DgykRRc/83-BAB3-AE-1326-46-C0-B632-4-C7-C162-E3-EC0.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dual Tone Mens Band</h5>
+          <p class="card-text">European Shank style mens bands. Perfect for his engagement ring.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/WnsfDvM/C011171-C-B873-465-F-A507-1287-F6-B29-AE8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Regal Ring</h5>
+          <p class="card-text">Gold with gold granulation and set with a Ruby. Hand fabricated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!--Third Two Images-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/pwtYjRb/DCEE80-F8-AF29-4-F30-A040-0-AA5-EF080-B14.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Set with Bumper Rings</h5>
+          <p class="card-text">Mix colored stones set in .925 Sterling Silver</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/gPSYxzR/F1-C32850-5419-4-A7-F-9-F5-A-12-BCF556796-F.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pyramid Ring</h5>
+          <p class="card-text">Gold with Topaz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+<!--Pendant Tab-->
+<div class="card text-center bg-dark" id="pendants">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="true" href="#">Pendants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#rings">Rings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!--First Two Images-->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="https://i.ibb.co/YNkXh2t/66-F9120-D-E1-AA-49-FC-B7-E4-97-D6-A31-F10-C3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Scrollwork Hand-Engraved Pendant</h5>
+            <p class="card-text">Sapphires and Diamonds set in oxidized .925 Sterling Silver.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="https://i.ibb.co/C1fbX9S/82-D5-F0-D1-6196-4-ADC-BD48-ADBA8-E6-CA59-B.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Topaz Pendant</h5>
+            <p class="card-text">Simple hand fabricated Gold pendant with Topaz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br><br>
+
+
+  <!--Second Two Images-->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="https://i.ibb.co/xDdqQq0/424-EFD72-DADE-4-EFD-87-F7-5-BE2-C22-B59-A4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Flower Pendant</h5>
+            <p class="card-text">Bicolor Tourmaline set in a Gold flower.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="https://i.ibb.co/k4bVLjH/02005-DB7-FB1-A-4493-A470-81-A53207-CC94.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Topaz Pendants</h5>
+            <p class="card-text">Hand fabricated gold pendants featuring Topaz gemstones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+
+ <!--Third Two Images-->
+ <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/yn7V9K8/BFED94-A0-60-E4-45-D8-A493-A5-DAFA588-A01.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Scrollwork Pendant</h5>
+          <p class="card-text">Hand fabricated Gold pendant with Aquamarine</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://i.ibb.co/1KzwH2Z/CEF41-DA7-B190-42-FA-BF9-B-B1-E4-CE60-E963.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ribbon Pendant</h5>
+          <p class="card-text">.925 Sterling Silver with Garnet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+
+<!--CAD Card-->
+<div class="card text-center bg-dark" id="cgi">
+    <div class="card-body">
+      <h5 class="card-title text-light">Computer Crafted Jewelry</h5>
+      <p class="card-text text-light">In addition to hand fabrication, I also create designs in computer modeling programs. 
+      </p>
+      <p class="card-text text-light">These designs are 3D printed and cast into jewelery.</p>
+        <p class="card-text text-light">Message me about starting your custom jewelry project today!</p>
+      <a href="mailto:robertcowden@mac.com" class="btn btn-light">Send Email</a>
+    </div>
+  </div>
+
+<br>
+
+<!--CAD Section-->
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+      <img src="https://i.ibb.co/Vq3nkWz/582-E92-E8-1974-4-D54-9006-93376-F0101-EE.jpg" alt="Dual Tone Comfort Fit Mens Band" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://i.ibb.co/p0SBFzw/823-CCD0-A-999-F-450-F-9-BAC-F4-F9-D5-FBBD05.jpg" alt="Bridal Setting" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://i.ibb.co/5rNswJr/cutoutring.jpg" alt="Cut Out Ring" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://i.ibb.co/18dvJtC/linkring.jpg" alt="Link Ring" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+
+  
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<!--3D Viewer-->
+<div id="model" class="stlviewer" data-src="Mewtwo_thinker.stl" data-rotate="x" data-zdistance="2">
+    <canvas width="300" height="250" style="width: 300px; height: 250px">
+</div>
+
+<!--Footer-->
+    <hr>
+    <footer>
+        <div class="row text-light">
+            <div class="center-text">
+                <p>&copy; 2022 Robert Cowden - robertcowden@mac.com</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
